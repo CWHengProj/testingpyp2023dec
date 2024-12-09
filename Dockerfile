@@ -1,11 +1,6 @@
 # Use the Maven image as the base
 FROM maven:3.9.9-eclipse-temurin-21 AS compiler
 #FROM openjdk:23-jdk-oracle 
-# Set up labels for metadata
-# LABEL MAINTAINER="jonathan"
-# LABEL DESCRIPTION="Mock1"
-# LABEL name="mock1"
-
 # Define application directory
 ARG APP_DIR=/app 
 WORKDIR ${APP_DIR}
